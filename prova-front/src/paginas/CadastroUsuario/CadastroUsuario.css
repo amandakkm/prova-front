@@ -1,0 +1,147 @@
+/* Contêiner principal para o formulário e a imagem */
+.cadastro-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    align-items: center; /* Centraliza o conteúdo verticalmente */
+    padding: 30px;
+    gap: 50px;
+    min-height: 100vh; /* Garante que o contêiner ocupe toda a altura da tela */
+}
+
+/* Estilizando o formulário */
+.CadastroForm {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 50px; /* Espaçamento entre os elementos do formulário */
+    align-items: center; /* Centraliza o conteúdo do formulário */
+    text-align: center; /* Centraliza o texto */
+}
+
+/* Estilizando o formulário para que os inputs e o botão fiquem em linha */
+.cadastro-form-inline {
+    display: flex;
+    flex-direction: column; /* Mantém a organização em coluna */
+    align-items: flex-start; /* Alinha o conteúdo à esquerda */
+    gap: 10px;
+}
+
+.cadastro-form-inline label {
+    font-weight: bold;
+    font-size: 0.9rem;
+    text-align: left; /* Alinha o texto da label à esquerda */
+    margin-top: 10px; /* Espaçamento acima da label */
+}
+
+.cadastro-form-inline input {
+    padding: 8px;
+    font-size: 1rem;
+    border: 1px solid #7e7878;
+    border-radius: 4px;
+    width: 100%; /* Faz o input ocupar toda a largura disponível */
+}
+
+.submit-button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #24394f;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    align-self: center; /* Centraliza o botão de envio */
+    margin-top: 20px; /* Espaçamento superior para o botão */
+}
+
+.submit-button:hover {
+    background-color: #37577a;
+}
+
+/* Estilizando a imagem */
+.image-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+}
+
+/* Estilizando a seção de endereços */
+.address-container {
+    flex: 2;
+    padding: 10px;
+    margin-bottom: 5px;
+    background-color: transparent; /* Mesma cor de fundo do formulário principal */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    width: 96.7%; /* Garante que o contêiner de endereço ocupe toda a largura disponível */
+}
+
+.remove-button {
+    padding: 5px 10px;
+    background-color: #e57373;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.remove-button:hover {
+    background-color: #d32f2f;
+}
+
+.add-address-button {
+    padding: 10px 15px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.add-address-button:hover {
+    background-color: #388e3c;
+}
+
+/* Estilizando o formulário para os campos de endereço */
+.address-form-inline {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Alinha os labels e inputs à esquerda */
+    gap: 10px;
+    width: 100%; /* Garante que os inputs ocupem a mesma largura */
+}
+
+.address-form-inline label {
+    font-weight: bold;
+    font-size: 0.9rem;
+    text-align: left; /* Alinha o texto da label à esquerda */
+    margin-bottom: 5px; /* Espaçamento entre a label e o input */
+    margin-top: 10px; /* Espaçamento acima da label */
+}
+
+.address-form-inline input {
+    padding: 8px;
+    font-size: 1rem;
+    border: 1px solid #7e7878;
+    border-radius: 4px;
+    width: 100%; /* Garante que o input ocupe toda a largura disponível */
+}
+
+.remove-address-button {
+    padding: 5px 10px;
+    font-size: 0.9rem;
+    background-color: #e57373;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    align-self: center; /* Centraliza o botão de remover endereço */
+}
